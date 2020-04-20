@@ -9,10 +9,10 @@ namespace LemonadeStand_3DayStarter
     class Store
     {
         // member variables (HAS A)
-        private double pricePerLemon;
-        private double pricePerSugarCube;
-        private double pricePerIceCube;
-        private double pricePerCup;
+        public double pricePerLemon;
+        public double pricePerSugarCube;
+        public double pricePerIceCube;
+        public double pricePerCup;
 
         // constructor (SPAWNER)
         public Store()
@@ -68,13 +68,13 @@ namespace LemonadeStand_3DayStarter
             }
         }
 
-        private double CalculateTransactionAmount(int itemCount, double itemPricePerUnit)
+        public double CalculateTransactionAmount(int itemCount, double itemPricePerUnit)
         {
             double transactionAmount = itemCount * itemPricePerUnit;
             return transactionAmount;
         }
 
-        private void PerformTransaction(Wallet wallet, double transactionAmount)
+        public void PerformTransaction(Wallet wallet, double transactionAmount)
         {
             wallet.PayMoneyForItems(transactionAmount);
         }

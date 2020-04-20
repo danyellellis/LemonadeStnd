@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
-    class Program
+    class Pitcher
     {
-        static void Main(string[] args)
+
+        //Member Variables (HAS A)
+        public int leftInPitch;
+
+        //Constructor
+        public Pitcher()
         {
-            //Game game = new Game();
-            
+
         }
+
+        //Member Methods (CAN DO)
+
+
     }
 }
