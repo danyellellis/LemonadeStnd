@@ -24,7 +24,7 @@ namespace LemonadeStand_3DayStarter
         {
            
             weatherConditions = new List<string>();
-            temperature = 100;
+            temperature = 90;
             
 
             
@@ -47,7 +47,7 @@ namespace LemonadeStand_3DayStarter
             int index = rand.Next(4);
             Condition = weatherConditions[index];
         }
-        public void temperatures()
+        public void Temperatures()
         {
             Random random = new Random();
             int temperature = random.Next(60, 90);
