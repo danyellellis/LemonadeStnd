@@ -18,7 +18,10 @@ namespace LemonadeStand_3DayStarter
         //Constructor
         public Recipe()
         {
-
+            amountOfLemons = 1;
+            amountOfIceCubes = 4;
+            amountOfSugarCubes = 2;
+            pricePerCup = .25;
         }
 
         //Member Methods (CAN DO)

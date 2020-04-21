@@ -11,7 +11,8 @@ namespace LemonadeStand_3DayStarter
 
         //Member Variables (HAS A)
         public string Condition;
-        public int temperature;
+        public int Temperature;
+        
         public List<string> weatherConditions;
         
 
@@ -24,7 +25,7 @@ namespace LemonadeStand_3DayStarter
         {
            
             weatherConditions = new List<string>();
-            temperature = 90;
+            Temperature = 0;
             
 
             
@@ -50,7 +51,7 @@ namespace LemonadeStand_3DayStarter
         public void Temperatures()
         {
             Random random = new Random();
-            int temperature = random.Next(60, 90);
+            int Temperature = random.Next(60, 90);
         }
        
     }
