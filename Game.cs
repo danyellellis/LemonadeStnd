@@ -12,6 +12,7 @@ namespace LemonadeStand_3DayStarter
         //Member Variables (HAS A)
         public Player player;
         public Store store;
+        public Recipe recipe;
         public List<Day> Days;
         public int currentDay;
         public double buyLemons = .05;
@@ -22,16 +23,19 @@ namespace LemonadeStand_3DayStarter
         {
             player = new Player();
             store = new Store();
+            recipe = new Recipe();
             currentDay = 0;
             DisplayRules();
             GoToStore();
-            BuyItems();
             
+            IngredientsInPitcher();
 
-            
 
-        
-        
+
+
+
+
+
         }
 
         //Member Methods (CAN DO)
@@ -62,34 +66,27 @@ namespace LemonadeStand_3DayStarter
             };
         }
 
-        public void BuyItems()
+       
 
-        {
-            Console.WriteLine("Please enter Buy to purchase your Items.");
-            string userInput = Console.ReadLine();
-            if (userInput == "Buy" )
+             public void IngredientsInPitcher()
             {
-                store.pricePerLemon -= player.wallet.money;
-                store.pricePerSugarCube -= player.wallet.money;
-                store.pricePerIceCube -= player.wallet.money;
-                store.pricePerCup -= player.wallet.money;
+                Console.WriteLine("Add Ingredients to your Recipe.");
+                int amountofLemons = int.Parse(Console.ReadLine());
+                int amountofSugarCubes = int.Parse(Console.ReadLine());
+                int amountofIceCubes = int.Parse(Console.ReadLine());
             }
-            else
-            {
-
-            };
-           
-
-           
-            
-            
 
 
-            
-            
-            
 
-        }
+
+
+
+
+
+
+
+
+    
         
 
 

@@ -22,9 +22,17 @@ namespace LemonadeStand_3DayStarter
             amountOfIceCubes = 4;
             amountOfSugarCubes = 2;
             pricePerCup = .25;
+           // IngredientsInPitcher();
         }
 
         //Member Methods (CAN DO)
+      //  public void IngredientsInPitcher()
+       // {
+       ////     Console.WriteLine("Add Ingredients to your Recipe.");
+       //     int amountofLemons = int.Parse(Console.ReadLine());
+      //      int amountofSugarCubes = int.Parse(Console.ReadLine());
+      //      int amountofIceCubes = int.Parse(Console.ReadLine());
+     //   }
 
 
     }
