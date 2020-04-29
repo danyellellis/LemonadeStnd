@@ -13,22 +13,31 @@ namespace LemonadeStand_3DayStarter
         public Player player;
         public Store store;
         public Recipe recipe;
-        public List<Day> Days;
+        public List<Day> days;
         public int currentDay;
         public double buyLemons = .05;
 
 
         //Constructor
-        public void RunGame()
+        public Game()
         {
             player = new Player();
             store = new Store();
             recipe = new Recipe();
+            days = new List<Day>();
+            createDays();
             currentDay = 0;
+        }
+
+        public void RunGame()
+        {
+            //This is the method that determines the flow of the game
+            //What order do you want things to happen in? Call the methods in that order
             DisplayRules();
+            //Weather forecast method
             GoToStore();
-            
             IngredientsInPitcher();
+           
 
 
 
@@ -66,15 +75,23 @@ namespace LemonadeStand_3DayStarter
             };
         }
 
-       
 
-             public void IngredientsInPitcher()
+
+        public void IngredientsInPitcher()
+        {
+
+        }
+
+
+        public void createDays()
+        {
+            for (int i = 0; i < 7; i++)
             {
-                Console.WriteLine("Add Ingredients to your Recipe.");
-                int amountofLemons = int.Parse(Console.ReadLine());
-                int amountofSugarCubes = int.Parse(Console.ReadLine());
-                int amountofIceCubes = int.Parse(Console.ReadLine());
+                Day day = new Day();
+                days.Add { day}
             }
+        }
+          
 
 
 
@@ -85,9 +102,6 @@ namespace LemonadeStand_3DayStarter
 
 
 
-
-    
-        
 
 
     }

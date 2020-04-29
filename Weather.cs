@@ -12,32 +12,22 @@ namespace LemonadeStand_3DayStarter
         //Member Variables (HAS A)
         public string Condition;
         public int Temperature;
-        
         public List<string> weatherConditions;
-        
-
-        
-
 
         //Constructor
-        public  Weather()
-
+        public Weather()
         {
            
             weatherConditions = new List<string>();
             Temperature = 0;
-            
-
-            
-
-
-           
+          
             weatherConditions.Add("Sunny");
             weatherConditions.Add("Partly Cloudy");
             weatherConditions.Add("Rainy");
             weatherConditions.Add("Light Wind");
 
-            
+            Temperatures();
+            Conditions();
             
             //Instantiate weatherConditions and add 3-4 condtions to it
             
@@ -47,11 +37,14 @@ namespace LemonadeStand_3DayStarter
             Random rand = new Random();
             int index = rand.Next(4);
             Condition = weatherConditions[index];
+
+        
         }
         public void Temperatures()
         {
             Random random = new Random();
-            int Temperature = random.Next(60, 90);
+             Temperature = random.Next(60, 90);
+       
         }
        
     }

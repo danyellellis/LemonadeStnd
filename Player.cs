@@ -22,6 +22,9 @@ namespace LemonadeStand_3DayStarter
             wallet = new Wallet();
             recipe = new Recipe();
             pitcher = new Pitcher();
+            name = "rob";
+            
+            
         }
 
         // member methods (CAN DO)

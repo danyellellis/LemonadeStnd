@@ -22,17 +22,19 @@ namespace LemonadeStand_3DayStarter
             amountOfIceCubes = 4;
             amountOfSugarCubes = 2;
             pricePerCup = .25;
-           // IngredientsInPitcher();
+           
         }
 
         //Member Methods (CAN DO)
-      //  public void IngredientsInPitcher()
-       // {
-       ////     Console.WriteLine("Add Ingredients to your Recipe.");
-       //     int amountofLemons = int.Parse(Console.ReadLine());
-      //      int amountofSugarCubes = int.Parse(Console.ReadLine());
-      //      int amountofIceCubes = int.Parse(Console.ReadLine());
-     //   }
+        public void IngredientsInPitcher(Player player)
+        {   // SINGLE-RESPONSIBILTY Principle
+            Console.WriteLine("How many Lemons would you like to purchase?");
+            amountOfLemons = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many Sugar cubes would you like to purchase?");
+            amountOfSugarCubes = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many Ice cubes would you like to purchase?");
+            amountOfIceCubes = int.Parse(Console.ReadLine());
+        }
 
 
     }
